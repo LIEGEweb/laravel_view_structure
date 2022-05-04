@@ -1,0 +1,17 @@
+.icon-hamburger, .icon-hamburger:before, .icon-hamburger:after{
+    @apply bg-black w-8 h-1 rounded ;
+}
+.icon-hamburger{
+    @apply block md:hidden mr-2 relative
+}
+
+.icon-hamburger:before, .icon-hamburger:after  {
+    @apply absolute content-[''] left-0
+}
+.icon-hamburger:before {
+    @apply -top-2 ;
+}
+
+.icon-hamburger:after {
+    @apply  top-2  ;
+}

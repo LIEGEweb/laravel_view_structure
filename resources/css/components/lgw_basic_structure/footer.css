@@ -1,0 +1,10 @@
+footer {
+    @apply relative flex flex-col md:flex-row w-full ;
+    @apply bg-slate-50 border-t border-b-slate-100 ;
+}
+
+footer:after {
+
+    @apply absolute content-['\00a9__2022,réalisation_LIEGEweb']  left-0 -bottom-6 h-6 w-full text-xs bg-slate-100 text-center px-4 py-1 ;
+
+}

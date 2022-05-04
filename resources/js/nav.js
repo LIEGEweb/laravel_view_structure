@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const trigger = document.getElementById('nav-trigger')
 
         if (trigger){
-            trigger.addEventListener('click', ()=>{
-                menu.classList.toggle('-mt-500')
+            trigger.addEventListener('click', (e)=>{
+                e.stopPropagation()
+                menu.classList.toggle('show')
             })
         }
     }

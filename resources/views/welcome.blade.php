@@ -393,37 +393,35 @@
 
 
 </head>
-<body class="antialiased overflow-hidden">
-<div class="container relative min-h-screen min-w-full flex flex-col justify-between">
-    <nav id="nav-mobile"
-         class="absolute md:!hidden top-10 left-0 z-2  w-screen h-screen flex flex-col justify-center items-center bg-slate-300 text-black -mt-500 transition-spacing ease-in duration-1000 ">
-        <ul class="flex flex-col h-1/4 w-1/4 justify-between font-black text-xl ">
+<body class="antialiased {{--overflow-hidden--}}">
+<div class="container">
+    <nav id="nav-mobile">
+        <ul>
             <li>Home</li>
             <li>Item 2</li>
             <li>Item 3</li>
         </ul>
     </nav>
-    <header class="flex w-full flex-row px-4 py-2 items-center justify-between  border-b border-b-slate-100 z-5">
+    <header>
         <a href="#" id="nav-trigger">
-            <i class="jph_menu md:hidden block  mr-2 bg-black w-8 h-1 rounded relative before:absolute before:-top-2 before:left-0 before:bg-black before:w-8 before:h-1  before:rounded after:absolute after:top-2 after:left-0 after:bg-black after:w-8 after:h-1  after:rounded">
-            </i>
+            <i class="icon-hamburger"> </i>
         </a>
-        <h1 class="text-2xl font-black flex  flex-1 justify-center  md:flex-none md:text-left">Site Title</h1>
-        <nav class=" {{--nav-desktop--}} hidden md:!flex px-8">
-            <ul class="flex flex-row flex-initial">
-                <li class="mx-2">Home</li>
-                <li class="mx-2">Item 2</li>
-                <li class="mx-2">Item 3</li>
+        <h1>Site Title</h1>
+        <nav id="nav-desktop">
+            <ul>
+                <li>Home</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
             </ul>
         </nav>
-        <aside class="">
+        <aside>
             Display or hide
         </aside>
     </header>
     <main>
-        <h1>Content ...</h1>
+        <h2>Content ...</h2>
     </main>
-    <footer class="flex w-full flex-col md:flex-row bg-slate-50 border-t border-b-slate-100">
+    <footer class="">
         <div class="flex w-full md:w-1/2 ">
             <div class="flex w-1/2 px-4 py-2">1</div>
             <div class="flex w-1/2 px-4 py-2"> 2</div>
@@ -432,7 +430,7 @@
             <div class="flex w-1/2 px-4 py-2">3</div>
             <div class="flex w-1/2 px-4 py-2"> 4</div>
         </div>
-        <span class="w-full text-xs bg-slate-100 text-center px-4 py-1">&copy 2022, réalisation LIEGEWeb </span>
+{{--        <span class="w-full text-xs bg-slate-100 text-center px-4 py-1">&copy 2022, réalisation LIEGEWeb </span>--}}
     </footer>
 
 

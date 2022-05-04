@@ -1,0 +1,39 @@
+/**
+
+Nav only for mobile
+invisible and slide down when activated by trigger button
+
+**/
+
+#nav-mobile {
+    @apply absolute top-10 left-0 z-10 ;
+    @apply flex flex-col justify-center items-center;
+    @apply w-screen h-screen -mt-500;
+    @apply transition-spacing ease-in duration-1000 ;
+    @apply bg-slate-300 text-black ;
+    /* change HERE background colour and text colour */
+    @apply md:!hidden ;
+}
+
+#nav-mobile.show {
+    @apply mt-0
+}
+
+#nav-mobile ul {
+    @apply flex flex-col justify-between ;
+    @apply h-1/4 w-1/4 ;
+    @apply font-black text-xl;
+}
+
+
+/* NAV for desktop only */
+#nav-desktop {
+   @apply hidden md:!flex px-8;
+}
+#nav-desktop ul {
+   @apply flex flex-row flex-initial;
+}
+#nav-desktop ul li{
+   @apply mx-2;
+}
+

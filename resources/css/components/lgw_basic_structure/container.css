@@ -1,0 +1,7 @@
+.container {
+    @apply relative min-h-screen min-w-full flex flex-col justify-between;
+}
+
+main {
+    @apply w-full px-4 py-2;
+}

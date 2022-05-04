@@ -1,0 +1,14 @@
+  /*
+     HEADER
+   */
+
+header {
+    @apply flex  flex-row items-center justify-between z-0 ;
+    @apply w-full px-4 py-2;
+    @apply border-b border-b-slate-100 ;
+}
+
+header h1 {
+    @apply text-2xl font-black flex  flex-1 justify-center ;
+    @apply md:flex-none md:text-left;
+  }
